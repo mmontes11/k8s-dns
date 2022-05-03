@@ -1,0 +1,14 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: duckdns
+  namespace: duckdns
+spec:
+  interval: 5m
+  sourceRef:
+    kind: GitRepository
+    name: flux-tenant-dns
+    namespace: flux-system
+  path: ./apps/duckdns
+  prune: true
+  timeout: 5m

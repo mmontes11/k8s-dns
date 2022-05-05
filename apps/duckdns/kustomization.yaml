@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: dns
 resources:
   - sealedsecret.yaml
-  - release.yaml
+  - helmrelease.yaml

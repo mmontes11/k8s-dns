@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: pihole
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`pihole.mmontes-dev.duckdns.org`)
+      services:
+        - kind: Service
+          name: pihole-web
+          namespace: dns
+          port: 80

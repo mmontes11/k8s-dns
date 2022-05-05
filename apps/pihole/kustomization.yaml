@@ -5,3 +5,5 @@ resources:
   - sealedsecret.yaml
   - helmrepository.yaml
   - helmrelease.yaml
+  - podmonitor.yaml
+  - ingressroute.yaml

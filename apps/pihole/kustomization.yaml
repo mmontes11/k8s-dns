@@ -3,8 +3,8 @@ kind: Kustomization
 namespace: dns
 resources:
   - sealedsecret.yaml
-  - repository.yaml
-  - release.yaml
+  - helmrepository.yaml
+  - helmrelease.yaml
 configMapGenerator:
   - name: pihole
     files:

@@ -40,9 +40,7 @@ spec:
 
     dnsmasq:
       customDnsEntries:
-        - address=/k8s-master/100.67.61.66
-        - address=/nas/100.74.102.110
-        - address=/penguin/100.73.53.112
+        - address=/mmontes.synology.me/100.74.102.110
         - address=/k8s-master.local/192.168.0.100
         - address=/k8s-worker0.local/192.168.0.101
         - address=/k8s-worker1.local/192.168.0.102
